@@ -4,18 +4,18 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 const Homepage = () => {
   return (
     <>
-      <div className="px-20">
+      <div className="px-6 lg:px-20">
         <header className="flex justify-between py-40">
           <div>
-            <h1 className="font-bold text-xl">
+            <h1 className="font-bold lg:text-xl">
               We Are <span className="font-normal">Digital Agency</span>
             </h1>
-            <h1 className="font-bold text-9xl max-w-4xl">
+            <h1 className="font-bold text-4xl lg:text-9xl max-w-4xl">
               <span className="font-light">Be</span> Better & Built{" "}
               <span className="font-light">Different.</span>
             </h1>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-2 lg:space-y-8">
             {["instagram", "dribble", "twitter"].map((icon) => (
               <img
                 key={icon}
@@ -31,9 +31,9 @@ const Homepage = () => {
 
       <div className="bg-blue-950 relative py-10">
         {/* Let's Talk Section */}
-        <div className="absolute -top-40 right-40 w-64 h-40 bg-blue-950">
-          <div className="absolute transform -translate-x-1/2 -top-1/2 left-1/2 w-40 h-40 bg-blue-400 rounded-full outline-8 outline-[#F5F5F5] flex items-center justify-center">
-            <h1 className="text-center font-bold text-2xl text-[#F5F5F5]">
+        <div className="absolute -top-20 lg:-top-40 right-16 lg:right-40 w-32 lg:w-64 h-24 lg:h-40 bg-blue-950">
+          <div className="absolute transform -translate-x-1/2 -top-1/2 left-1/2 w-20 h-20 lg:w-40 lg:h-40 bg-blue-400 rounded-full outline-8 outline-[#F5F5F5] flex items-center justify-center">
+            <h1 className="text-center lg:font-bold lg:text-2xl text-[#F5F5F5]">
               Let's Talk
             </h1>
           </div>
@@ -59,16 +59,17 @@ const Homepage = () => {
           className="relative"
           style={{
             backgroundImage: "url(/src/assets/images/images.jpg)",
-            width: "1120px",
+            width: "100vw",
+            maxWidth: "1120px",
             height: "500px",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center center",
           }}>
           <div
-            className="flex items-end w-full h-full px-20 py-10"
+            className="flex items-end w-full h-full px-6 lg:px-20 py-10"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-            <div className="text-white mb-4 flex items-center justify-between w-full">
+            <div className="text-white mb-4 flex flex-wrap items-center justify-between w-full">
               <div className="flex items-center gap-4">
                 <img
                   src="/src/assets/logo/logo.png"
@@ -78,7 +79,7 @@ const Homepage = () => {
                 />
                 <p className="font-bold text-4xl italic">Craft</p>
               </div>
-              <div className="flex items-center gap-20">
+              <div className="flex items-center gap-4 mt-5 lg:mt-0 lg:gap-20">
                 {[
                   { title: "We Are Bassed in", value: "Indonesia & London" },
                   { title: "Has Complete", value: "100+ Project" },
@@ -99,9 +100,9 @@ const Homepage = () => {
         </div>
 
         {/* Services Section */}
-        <section className="mt-20 text-white px-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="text-5xl">
+        <section className="mt-20 text-white px-6 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-end">
+            <div className="text-4xl lg:text-5xl">
               <h1 className="font-semibold">Best Services</h1>
               <h1 className="font-light">For Customers</h1>
             </div>
@@ -113,7 +114,7 @@ const Homepage = () => {
           </div>
         </section>
 
-        <section className="mt-20 px-20">
+        <section className="mt-20 px-6 lg:px-20">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
             {[
               { icon: "marketing", label: "Digital Marketing" },
@@ -136,19 +137,19 @@ const Homepage = () => {
         </section>
 
         {/* Highlight Section */}
-        <section className="mt-10 px-20">
+        <section className="mt-10 lg:px-20">
           <div className="w-full bg-slate-800">
             <img
               src="/src/assets/images/images.jpg"
               className="w-full object-cover h-96"
               alt=""
             />
-            <div className="flex justify-between items-center p-10">
-              <h1 className="text-white w-[70%] text-lg">
+            <div className="flex flex-wrap justify-between items-center p-6 lg:p-10">
+              <h1 className="text-white lg:w-[70%] lg:text-lg">
                 We are dedicated to providing exceptional solutions for your
                 business needs. Let's create something extraordinary together!
               </h1>
-              <button className="px-8 py-3 bg-blue-600 text-white shadow text-lg rounded-lg">
+              <button className="px-8 py-3 mt-5 bg-blue-600 text-white shadow text-lg rounded-lg">
                 Get Started
               </button>
             </div>
@@ -156,14 +157,16 @@ const Homepage = () => {
         </section>
 
         {/* Final Section */}
-        <section className="mt-20 px-20">
-          <div className="grid grid-cols-2 gap-5">
+        <section className="mt-20 px-6 lg:px-20">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
             <div className="text-white">
-              <h1 className="font-bold text-5xl">Designed to Inspire</h1>
-              <h1 className="font-light mb-5 text-5xl">
+              <h1 className="font-bold text-4xl lg:text-5xl">
+                Designed to Inspire
+              </h1>
+              <h1 className="font-light mb-5 text-4xl lg:text-5xl">
                 Built with Excellence
               </h1>
-              <p className="text-lg">
+              <p className="lg:text-lg text-justify">
                 We strive to innovate and deliver solutions that empower your
                 business. Together, we can achieve greatness and make a lasting
                 impact. Our team of experts is dedicated to providing you with
@@ -187,29 +190,68 @@ const Homepage = () => {
           </div>
         </section>
       </div>
-      <div className="mt-20 px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="mt-20 px-6 lg:px-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-end">
           <div className="">
-            <h1 className="font-light text-5xl">Our Recent</h1>
-            <h1 className="font-bold text-5xl">Client Works</h1>
+            <h1 className="font-light text-4xl lg:text-5xl">Our Recent</h1>
+            <h1 className="font-bold text-4xl lg:text-5xl">Client Works</h1>
           </div>
           <div className="">
-            <p className="text-lg text-gray-600">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
-              debitis dolorum odit rem explicabo vitae recusandae id, sit quis
-              officia ex dolorem! Voluptatum voluptatibus culpa corporis.
-              Nesciunt quidem nam non!
+            <p className="lg:text-lg text-gray-600">
+              We're proud to have worked with a variety of clients from
+              different industries. From small startups to large enterprises,
+              we've helped them achieve their goals and grow their business.
             </p>
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
-          <div className="w-full bg-gray-200">
+          <div className="w-full bg-gray-200 relative">
             <div className="p-5">
-            <img src="/src/assets/images/client.png" alt="" /></div>
+              <img src="/src/assets/images/client.png" alt="" />
+            </div>
+            <div className="absolute inset-0 opacity-0 hover:opacity-90 transition-opacity duration-300 backdrop-blur-sm bg-slate-900 bg-opacity-50">
+              <div className="flex justify-center items-center h-full">
+                <div className="text-center text-white">
+                  <h1 className="font-light text-2xl lg:text-4xl lg:mb-2">
+                    Course App
+                  </h1>
+                  <h1 className="font-semibold text-2xl lg:text-5xl mb-5 lg:mb-10">
+                    SomethingNew
+                  </h1>
+                  <div className="w-24 h-24 lg:w-52 lg:h-52 flex justify-center items-center rounded-full bg-blue-600 mx-auto outline-8 outline-white">
+                    <h1 className="lg:text-3xl lg:font-semibold">See Details</h1>
+                  </div>
+                  <div className="flex justify-between items-center mt-10 lg:mt-20">
+                    <p className="lg:text-lg lg:font-semibold">Project</p>
+                    <p className="lg:text-lg lg:font-semibold">3 hours ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="w-full bg-gray-200">
+          <div className="w-full bg-gray-200 relative">
             <div className="p-5">
-            <img src="/src/assets/images/client2.png" alt="" /></div>
+              <img src="/src/assets/images/client2.png" alt="" />
+            </div>
+            <div className="absolute inset-0 opacity-0 hover:opacity-90 transition-opacity duration-300 backdrop-blur-sm bg-slate-900 bg-opacity-50">
+              <div className="flex justify-center items-center h-full">
+                <div className="text-center text-white">
+                  <h1 className="font-light text-2xl lg:text-4xl lg:mb-2">
+                    Course App
+                  </h1>
+                  <h1 className="font-semibold text-2xl lg:text-5xl mb-5 lg:mb-10">
+                    SomethingNew
+                  </h1>
+                  <div className="w-24 h-24 lg:w-52 lg:h-52 flex justify-center items-center rounded-full bg-blue-600 mx-auto outline-8 outline-white">
+                    <h1 className="lg:text-3xl lg:font-semibold">See Details</h1>
+                  </div>
+                  <div className="flex justify-between items-center mt-10 lg:mt-20">
+                    <p className="lg:text-lg lg:font-semibold">Project</p>
+                    <p className="lg:text-lg lg:font-semibold">3 hours ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
