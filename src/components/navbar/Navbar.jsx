@@ -12,7 +12,7 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <div className="flex gap-2 items-center">
-              <img src="/src/assets/logo/logo.png" width={40} alt="Logo" />
+              <img src="/assets/logo/logo.png" width={40} alt="Logo" />
               <h1 className="font-bold text-2xl italic">Craft</h1>
             </div>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className="hidden md:flex items-center px-8 py-3 bg-white text-gray-800 shadow outline-1 outline-slate-200 text-lg rounded-lg gap-2">
               <button>Contact Us</button>
               <img
-                src="/src/assets/icons/phone-call.png"
+                src="/assets/icons/phone-call.png"
                 width={20}
                 alt="Call"
               />

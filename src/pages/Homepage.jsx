@@ -19,7 +19,7 @@ const Homepage = () => {
             {["instagram", "dribble", "twitter"].map((icon) => (
               <img
                 key={icon}
-                src={`/src/assets/icons/${icon}.png`}
+                src={`/assets/icons/${icon}.png`}
                 width={50}
                 alt={icon}
                 className="p-2 bg-white rounded-lg shadow outline-1 outline-slate-200"
@@ -58,7 +58,7 @@ const Homepage = () => {
         <div
           className="relative"
           style={{
-            backgroundImage: "url(/src/assets/images/images.jpg)",
+            backgroundImage: "url(/assets/images/images.jpg)",
             width: "100vw",
             maxWidth: "1120px",
             height: "500px",
@@ -72,7 +72,7 @@ const Homepage = () => {
             <div className="text-white mb-4 flex flex-wrap items-center justify-between w-full">
               <div className="flex items-center gap-4">
                 <img
-                  src="/src/assets/logo/logo.png"
+                  src="/assets/logo/logo.png"
                   width={70}
                   alt="Craft Logo"
                   className="bg-white rounded-lg shadow outline-1 outline-slate-200 p-2"
@@ -126,7 +126,7 @@ const Homepage = () => {
                 key={index}
                 className="flex justify-center items-center gap-2 w-full py-4 bg-slate-700 text-white text-center">
                 <img
-                  src={`/src/assets/icons/${service.icon}.png`}
+                  src={`/assets/icons/${service.icon}.png`}
                   width={30}
                   alt={service.label}
                 />
@@ -140,7 +140,7 @@ const Homepage = () => {
         <section className="mt-10 lg:px-20">
           <div className="w-full bg-slate-800">
             <img
-              src="/src/assets/images/images.jpg"
+              src="/assets/images/images.jpg"
               className="w-full object-cover h-96"
               alt=""
             />
@@ -181,7 +181,7 @@ const Homepage = () => {
             </div>
             <div>
               <img
-                src="/src/assets/images/images2.jpg"
+                src="/assets/images/images2.jpg"
                 width={500}
                 className="ml-auto rounded-lg"
                 alt="Passion Image"
@@ -207,7 +207,7 @@ const Homepage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
           <div className="w-full bg-gray-200 relative">
             <div className="p-5">
-              <img src="/src/assets/images/client.png" alt="" />
+              <img src="/assets/images/client.png" alt="" />
             </div>
             <div className="absolute inset-0 opacity-0 hover:opacity-90 transition-opacity duration-300 backdrop-blur-sm bg-slate-900 bg-opacity-50">
               <div className="flex justify-center items-center h-full">
@@ -231,7 +231,7 @@ const Homepage = () => {
           </div>
           <div className="w-full bg-gray-200 relative">
             <div className="p-5">
-              <img src="/src/assets/images/client2.png" alt="" />
+              <img src="/assets/images/client2.png" alt="" />
             </div>
             <div className="absolute inset-0 opacity-0 hover:opacity-90 transition-opacity duration-300 backdrop-blur-sm bg-slate-900 bg-opacity-50">
               <div className="flex justify-center items-center h-full">
