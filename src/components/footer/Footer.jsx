@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="px-6 lg:px-20 mt-20 py-5">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           <div className="flex flex-wrap items-center gap-2 col-span-12 lg:col-span-3">
-            <img src="/src/assets/logo/logo.png" width={100} alt="" />
+            <img src="/assets/logo/logo.png" width={100} alt="" />
             <h1 className="font-bold text-7xl italic">Craft</h1>
             <div className="hidden lg:block">
               <p>We are a digital agency that provides web design, web development, and app development services.</p>
